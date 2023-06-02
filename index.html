@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="CSS\styles.css" />
+    <link rel="stylesheet" href="CSS\normalize.css" />
+  </head>
+  <body>
+    <div class="anclado">
+      <button id="inicio">Inicio</button>
+      <button id="mi">Sobre mi</button>
+      <button id="port">Portafolio</button>
+      <button id="novedades">Novedades</button>
+      <button id="contacto">Contacto</button>
+      <img src="img\Logo.png" />
+      <h2>Néstor</h2>
+      <h2>Álvarez</h2>
+      <h2>Pareja</h2>
+    </div>
+
+    <div class="barracambiante">
+      <h2><a id="claro" onclick="cambiarClaro()">Claro</a></h2>
+      <h2><a id="oscuro" onclick="cambiarOscuro()">Oscuro</a></h2>
+      <script src="js\cambiante.js"></script>
+    </div>
+    <script src="js\listaNovedades.js"></script>
+    <img src="img\cualidades-persona-humanitaria.jpg" id="fotoperfil" />
+    <div class="redes">
+      <a href="https://www.instagram.com/flip_rotsen/" target="_blank"
+        ><img src="img\87390.png" alt="insta" />
+      </a>
+      <a href="#"><img src="img\5cb78671a7c7755bf004c14b.png" /></a>
+    </div>
+    <div class="sobremi">
+      <video width="100%" height="100%" autoplay muted loop>
+        <source
+          src="2023-03-23 17-55-33.mp4">
+        />
+      </video>
+    </div>
+    <h2>Portafolio</h2>
+    <div class="portfolio">
+      <!--  Aqui va imagenes o apps creadas por mi o enlaces de web-->
+      <a href="#"><img src="img\5cb78671a7c7755bf004c14b.png" /></a>
+      <a href="#"><img src="img\5cb78671a7c7755bf004c14b.png" /></a>
+      <a href="#"><img src="img\5cb78671a7c7755bf004c14b.png" /></a>
+      <a href="#"><img src="img\5cb78671a7c7755bf004c14b.png" /></a>
+      <a href="#"><img src="img\5cb78671a7c7755bf004c14b.png" /></a>
+      <a href="#"><img src="img\5cb78671a7c7755bf004c14b.png" /></a>
+      <a href="#"><img src="img\5cb78671a7c7755bf004c14b.png" /></a>
+      <a href="#"><img src="img\5cb78671a7c7755bf004c14b.png" /></a>
+    </div>
+
+    <button id="vermas">Ver mas</button>
+    <div class="desplegar">
+      <a href="#"><img src="img\5cb78671a7c7755bf004c14b.png" /></a>
+      <a href="#"><img src="img\5cb78671a7c7755bf004c14b.png" /></a>
+      <a href="#"><img src="img\5cb78671a7c7755bf004c14b.png" /></a>
+      <a href="#"><img src="img\5cb78671a7c7755bf004c14b.png" /></a>
+      <a href="#"><img src="img\5cb78671a7c7755bf004c14b.png" /></a>
+      <a href="#"><img src="img\5cb78671a7c7755bf004c14b.png" /></a>
+    </div>
+    <button id="vermenos">Ver menos</button>
+
+    <div class="ultimosmov">
+      <h2>Ultimos movimientos</h2>
+
+      <!--Aqui va como un novedades sobre mi junto a un boton disponible off o on-->
+      <div class="mov">
+        <img src="img\5cb78671a7c7755bf004c14b.png" />
+        <h2>AHAHAHA</h2>
+        <p>lololoooooooooooooooooooooooo</p>
+      </div>
+      <div class="mov">
+        <img src="img\5cb78671a7c7755bf004c14b.png" />
+        <h2>AHAHAHA</h2>
+        <p>lololoooooooooooooooooooooooo</p>
+      </div>
+      <div class="mov">
+        <img src="img\5cb78671a7c7755bf004c14b.png" />
+        <h2>AHAHAHA</h2>
+        <p>lololoooooooooooooooooooooooo</p>
+      </div>
+      <div class="mov">
+        <img src="img\5cb78671a7c7755bf004c14b.png" />
+        <h2>AHAHAHA</h2>
+        <p>lololoooooooooooooooooooooooo</p>
+      </div>
+    </div>
+    <script src="js\desplegar.js"></script>
+
+    <div class="contacto">
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <input id="enviar" type="submit" value="Enviar" />
+      </form>
+    </div>
+  </body>
+</html>

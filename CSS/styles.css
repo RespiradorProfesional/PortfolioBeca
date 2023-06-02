@@ -1,0 +1,217 @@
+:root {
+  --primario: #08415c; /* Esto se cambia */
+  --secundario: #cc2936;
+  --letras: #000000;
+}
+
+button {
+  font-weight: bold;
+  font-size: large;
+  margin: 0 auto;
+  background-color: var(--primario);
+  color: var(--secundario);
+  padding: 2rem;
+  border-radius: 3rem;
+  transition: 0.5s;
+  cursor: pointer;
+  border-color: var(--primario);
+}
+
+button:hover {
+  background-color: var(--secundario);
+  color: var(--primario);
+  padding: 2.5rem;
+}
+
+html {
+  text-align: center;
+  margin-left: 20rem;
+  background-color: var(--primario);
+}
+
+a {
+  text-decoration: none;
+}
+
+.anclado {
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: block;
+  background-color: var(--secundario);
+  height: 100%;
+  width: 20rem;
+}
+
+.anclado button {
+  margin: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.anclado img {
+  width: 10rem;
+}
+
+.barracambiante {
+  display: flex;
+  justify-content: center;
+  background-color: var(--secundario);
+  max-width: 30rem;
+  border-radius: 3rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  margin-top: 6rem;
+}
+
+.barracambiante a {
+  margin: 1.5rem;
+  cursor: pointer;
+}
+
+#fotoperfil {
+  border-radius: 50rem;
+  max-width: 40rem;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  margin: 4rem;
+}
+.redes img {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  width: 100px;
+  height: 100px;
+}
+
+.redes img:hover {
+  background-color: var(--secundario);
+}
+
+h2 {
+  font-size: 3rem;
+  color: var(--letras);
+  font-style: var(--letras);
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin: 2.4rem;
+  margin-top: 0rem;
+}
+
+.portfolio img {
+  width: 10rem;
+}
+
+.desplegar {
+  display: none;
+}
+
+.ultimosmov {
+  background-color: #7c7c7c;
+  padding: 2rem;
+}
+
+.mov {
+  background-color: var(--secundario);
+  color: var(--primario);
+  font-size: 2rem;
+  display: flex;
+  margin: 2rem;
+}
+
+.mov img {
+  left: 0;
+  max-width: 8rem;
+}
+
+.contacto {
+  background-image: linear-gradient(
+      rgba(39, 39, 39, 0.8),
+      rgba(22, 22, 22, 0.8)
+    ),
+    url(https://i.pinimg.com/originals/54/dd/49/54dd49ce13d25510bf20bda83115cb53.png);
+  padding: 24%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+label {
+  display: block;
+  font-size: 2rem;
+  margin: 2rem;
+  color: #ffffff;
+}
+
+#enviar {
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: block;
+  background-color: var(--primario);
+  border-radius: 3rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    margin: 0;
+    overflow-x: hidden;
+  }
+  .anclado {
+    display: none;
+  }
+
+  button {
+    padding: 5rem;
+  }
+
+  #fotoperfil {
+    max-width: 22rem;
+  }
+
+  .redes img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .portfolio {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .portfolio img {
+    width: 8rem;
+  }
+
+  .mov {
+    display: block;
+    margin: 2rem;
+  }
+
+  .mov h2 {
+    font-size: 1.6rem;
+  }
+
+  .mov img {
+    left: 0;
+    max-width: 10rem;
+  }
+
+  .mov p {
+    display: block;
+    margin: 2rem;
+  }
+
+  label {
+    font-size: 3.6rem;
+  }
+
+  input {
+    width: 10rem;
+    height: 4rem;
+  }
+}
